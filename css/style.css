@@ -1,0 +1,580 @@
+body {
+    margin: 0;
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #111820;
+    border-bottom: 3px solid #d6a900;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-family: "Black Ops One", system-ui;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.header-contenido {
+    max-width: 1200px;
+    min-height: 70px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-family: "Black Ops One", system-ui;
+    font-size: 1rem;
+}
+
+.logo span {
+    color: #f0c419;
+    margin-right: 8px;
+}
+
+nav a:hover {
+    color: #f0c419;
+}
+
+
+h1, h2, h3 {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*HERO*/
+
+.banner {
+    min-height: 520px;
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 14, 20, 0.95) 0%,
+            rgba(8, 14, 20, 0.80) 35%,
+            rgba(8, 14, 20, 0.15) 70%,
+            rgba(8, 14, 20, 0.05) 100%
+        ),
+        url("../assest/hero-cs.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.banner-texto {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.banner h1 {
+    margin: 0 0 20px;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.banner h1 span {
+    display: block;
+    color: #f0c419;
+}
+
+.banner p {
+    max-width: 480px;
+    margin: 0 0 30px;
+    color: #e0e0e0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #f0c419;
+    color: #111820;
+    padding: 0.9rem 1.8rem;
+
+    text-decoration: none;
+    font-family: "Black Ops One", system-ui;
+
+    border: 2px solid #f0c419;
+    border-radius: 3px;
+
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: #f0c419;
+}
+
+
+/*ARMAS*/
+
+.armas {
+    background-color: #18222b;
+    padding: 70px 5%;
+    text-align: center;
+    color: white;
+}
+
+.armas > h2 {
+    color: #f0c419;
+    font-size: 2.2rem;
+    margin: 0 0 40px;
+}
+
+.armas > h2::before {
+    content: "★ ";
+    color: #f0c419;
+}
+
+/* Contenedor de las cards */
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Card */
+
+.card {
+    background-color: #202c36;
+    width: 240px;
+    padding: 18px;
+
+    border: 1px solid #46535d;
+    border-bottom: 4px solid #f0c419;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    text-align: left;
+
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Título */
+
+.card h3 {
+    color: #f0c419;
+    font-size: 1.2rem;
+    margin: 5px 0 15px;
+}
+
+
+/* Imagen */
+
+.img-arma {
+    width: 100%;
+    height: 190px;
+
+    object-fit: contain;
+
+    background-color: #111820;
+    margin-bottom: 15px;
+}
+
+
+/* Descripción */
+
+.card p {
+    color: #d5d5d5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    flex-grow: 1;
+}
+
+
+/* Botón */
+
+.card a {
+    background-color: #101820;
+    color: #f0c419;
+
+    padding: 10px 14px;
+    margin-top: 15px;
+
+    border: 1px solid #f0c419;
+    border-radius: 3px;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-family: "Black Ops One", system-ui;
+    font-size: 0.75rem;
+
+    transition: 0.2s;
+}
+
+.card a:hover {
+    background-color: #f0c419;
+    color: #101820;
+}
+
+
+
+/*MODELOS DISPONIBLES*/
+
+.modelos {
+    background-color: #111820;
+    padding: 70px 5%;
+    text-align: center;
+    color: white;
+}
+
+.modelos > h2 {
+    color: #f0c419;
+    font-size: 2rem;
+    margin: 0 0 40px;
+}
+
+.modelos > h2::before {
+    content: "★ ";
+}
+
+
+/* Galería */
+
+.imagenes {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
+    border: 2px solid #46535d;
+    border-radius: 3px;
+
+    box-sizing: border-box;
+
+    transition: 0.25s;
+}
+
+.imagenes img:hover {
+    border-color: #f0c419;
+
+    transform: scale(1.03);
+
+    box-shadow: 0 0 18px rgba(240, 196, 25, 0.35);
+}
+
+
+/*CONTACTO*/
+
+.contacto {
+    background-color: #18222b;
+    padding: 70px 5%;
+    color: white;
+}
+
+.contacto > h2 {
+    color: #f0c419;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.contacto > h2::before {
+    content: "★ ";
+}
+
+
+/* Formulario */
+
+form {
+    max-width: 750px;
+    margin: 0 auto;
+
+    background-color: #202c36;
+    padding: 35px;
+
+    border: 1px solid #46535d;
+    border-bottom: 4px solid #f0c419;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+    color: #e5e5e5;
+    font-weight: bold;
+}
+
+.form-group label i {
+    color: #f0c419;
+    margin-right: 5px;
+}
+
+
+/* Campos */
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+
+    background-color: #111820;
+    color: white;
+
+    border: 1px solid #46535d;
+    border-radius: 3px;
+
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #f0c419;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+
+/* Checkbox */
+
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-top: 8px;
+    align-self: flex-start;
+    accent-color: #f0c419;
+}
+
+
+/* Botones */
+
+.botones-formulario {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.botones-formulario input {
+    min-width: 130px;
+    padding: 12px 20px;
+
+    background-color: #111820;
+    color: #f0c419;
+
+    border: 1px solid #f0c419;
+    border-radius: 3px;
+
+    font-family: "Black Ops One", system-ui;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botones-formulario input[type="submit"] {
+    background-color: #f0c419;
+    color: #111820;
+}
+
+.botones-formulario input:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #0b1117;
+    color: #cfcfcf;
+
+    padding: 35px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    border-top: 3px solid #f0c419;
+}
+
+.footer div:first-child {
+    text-align: left;
+}
+
+.footer div:last-child {
+    text-align: right;
+}
+
+.footer h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0 10px;
+}
+
+.footer h3::before {
+    content: "★ ";
+    color: #f0c419;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.footer div:last-child p:last-child {
+    color: #777;
+    font-size: 0.75rem;
+    margin-top: 12px;
+}
+
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    .header-contenido {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    /* HERO */
+
+    .banner {
+        min-height: 450px;
+        padding: 40px 25px;
+        background-position: center;
+    }
+
+    .banner h1 {
+        font-size: 2.7rem;
+    }
+
+    .banner-texto {
+        max-width: 100%;
+    }
+
+
+    /* CARDS */
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* GALERÍA */
+
+    .imagenes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagenes img {
+        height: 160px;
+    }
+
+
+    /* FORMULARIO */
+
+    form {
+        padding: 25px 20px;
+    }
+
+    .botones-formulario {
+        flex-direction: column;
+    }
+
+    .botones-formulario input {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer div:first-child,
+    .footer div:last-child {
+        text-align: center;
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las mejores armas</title>
+</head>
+
+<body>
+
+<header>
+    <div class="header-contenido">
+
+        <a href="#inicio" class="logo">
+            <span>★</span> LAS MEJORES ARMAS
+        </a>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#armas">Armas</a>
+            <a href="#modelos">Modelos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </div>
+</header>
+
+    <main>
+
+<section class="banner" id="inicio">
+
+    <div class="banner-texto">
+        <h1>
+            LAS MEJORES
+            <span>ARMAS</span>
+        </h1>
+
+        <p>
+            Las mejores armas para conocer sus características y modelos.
+        </p>
+
+        <a href="#contacto" class="boton">CONTACTO</a>
+    </div>
+
+</section>
+
+
+        <section class="armas" id="armas">
+
+            <h2>ARMAS</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>AK-47</h3>
+
+                    <img class="img-arma" src="assest/AK47.webp" alt="AK47">
+
+                    <p>
+                        Tipo: Fusil de asalto, Calibre: 7.62 × 39 mm.
+                        Diseñado en la Unión Soviética por Mikhail Kalashnikov
+                        a finales de la década de 1940.
+                    </p>
+
+                    <a href="#contacto">Quiero ser contactado</a>
+                </div>
+
+
+                <div class="card">
+                    <h3>Beretta 1301</h3>
+
+                    <img class="img-arma" src="assest/Beretta1301.webp" alt="Beretta 1301">
+
+                    <p>
+                        Tipo: Escopeta semiautomática, Calibre: 12.
+                        Una de las escopetas tácticas y deportivas desarrolladas
+                        por Beretta.
+                    </p>
+
+                    <a href="#contacto">Quiero ser contactado</a>
+                </div>
+
+
+                <div class="card">
+                    <h3>308 AR-15</h3>
+
+                    <img class="img-arma" src="assest/308ar15.jpg" alt="308 AR-15">
+
+                    <p>
+                        Tipo: Fusil semiautomático de gran calibre.
+                        .308 Winchester / 7.62 × 51 mm NATO.
+                        Basado en el diseño modular del AR-15 / AR-10.
+                    </p>
+
+                    <a href="#contacto">Quiero ser contactado</a>
+                </div>
+
+
+                <div class="card">
+                    <h3>Colt 1911</h3>
+
+                    <img class="img-arma" src="assest/1911.jpg" alt="Colt 1911">
+
+                    <p>
+                        Tipo: Pistola semiautomática, Calibre: .45 ACP.
+                        Diseñada por John Moses Browning, es una de las
+                        pistolas de mano más conocidas.
+                    </p>
+
+                    <a href="#contacto">Quiero ser contactado</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="modelos" id="modelos">
+
+            <h2>MODELOS DISPONIBLES</h2>
+
+            <div class="imagenes">
+
+                <img src="assest/1.jpeg" alt="AK47 verde">
+                <img src="assest/2.jpeg" alt="AK47 negro">
+                <img src="assest/3.jpeg" alt="Beretta 1301 verde">
+                <img src="assest/4.jpeg" alt="Beretta 1301 negro">
+                <img src="assest/5.jpeg" alt="308 AR-15 verde">
+                <img src="assest/6.jpeg" alt="308 AR-15 negro">
+                <img src="assest/7.jpeg" alt="Colt 1911 verde">
+                <img src="assest/8.jpeg" alt="Colt 1911 negro">
+
+            </div>
+
+        </section>
+
+
+        <section class="contacto" id="contacto">
+
+            <h2>CONTACTO</h2>
+
+            <form action="">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">
+                        <i class="bi bi-envelope-fill"></i> Email
+                    </label>
+
+                    <input type="email" id="email" name="correo" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="telefono">
+                        <i class="bi bi-telephone-fill"></i> Telefono
+                    </label>
+
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="comentarios">Comentarios</label>
+
+                    <textarea name="comentarios" id="comentarios"></textarea>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="motivo">Motivo del contacto</label>
+
+                    <select name="motivo" id="motivo">
+
+                        <option value="quiero que me contacten">
+                            Quiero que me contacten
+                        </option>
+
+                        <option value="ak47">AK-47</option>
+                        <option value="Beretta1301">Beretta 1301</option>
+                        <option value="308 AR-15">308 AR-15</option>
+                        <option value="colt 1911">Colt 1911</option>
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="acepto">
+                        Acepto y entiendo los términos de LAS MEJORES ARMAS
+                    </label>
+
+                    <input type="checkbox" id="acepto" name="acepto">
+                </div>
+
+
+                <div class="botones-formulario">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div>
+            <h3>Las mejores armas</h3>
+            <p>Armas para el cuidado de tu casa y tu familia</p>
+        </div>
+
+        <div>
+            <p>AV. Beretta 1301 - Bs. As.</p>
+            <p>Tel: 116669-1301</p>
+            <p>© 2026 LAS MEJORES ARMAS. Derechos de autor</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
